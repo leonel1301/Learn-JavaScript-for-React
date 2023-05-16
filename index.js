@@ -38,6 +38,14 @@ const user = {
         console.log('Receiving email...');
     }
 }
+//objetos como parametros
+function printUser(user) {
+    return '<h1>Hola '+ user.name +'</h1>'
+}
+
+console.log(printUser(user));
+document.body.innerHTML = printUser(user);
+
 
 console.log(user.address.street);
 console.log(user.friends[1]);
